@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #d3e0ea !important;
+  min-height: 1500px;
+  width: auto;
+  overflow: auto;
+  z-index: -1;
+}
+
+.info{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .content{
+  max-width: 1000px;
+    margin: 0 10px;
+}
+input{
+  opacity: 1;
+}
+
+/*all ids of index.html here*/
+#car{
+  z-index: 2
+}
+#h2Text{
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  z-index: 1;
+}
+/*all classes of index.html here*/
+.brandimg{
+  height: 30%;
+  width: 30%;
+}
+.parallax1{
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax1:before{
+content: "";
+position: absolute;
+bottom: 0;
+width: 100%;
+height:100px;
+background: linear-gradient(to top , #d3e0ea, transparent);
+z-index: 10000;
+
+}
+.parallax1:after{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height:100%;
+background:#d3e0ea;
+z-index: 10000;
+mix-blend-mode: color;
+}
+.parallax1 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.parallax-container{
+  height: 100vh;
+  width: 100vw;
+}
+.contactme{
+  background: #51c2d5;
+  display: flex;
+  flex-direction: column;
+
+}
+.contactme button{
+  width: 100%;
+
+}
+.getincontact{
+  padding: 7% 25%;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+
+}
+.getincontact h2{
+  position: relative;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #28527a;
+}
+.getincontact h2:before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+  width: 60px;
+  height: 4px;
+  background: #000;
+}
+.getincontact p{
+  max-width: 700px;
+  display: inline-block;
+}
+.text-area{
+   word-break: break-all;
+    resize: none;
+   height: 100px!important;
+}
+.form-control{
+  border: none!important;
+   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) );
+}
+
+/*media screens for mobile of index.html */
+@media screen and (min-width: 968px) {
+  .parallax1{
+    height: 120vh;
+  }
+  #h2Text{
+    font-size: 10em;
+  }
+}
+@media screen and (max-width: 968px) {
+  .navbar-brand{
+        width: 40%;
+  }
+  .brandimg {
+    height: 50%;
+    width: 50%;
+}
+  .info{
+    height: 700px;
+
+  }
+  .content{
+    position: relative;
+top: -51px;
+font-size: 13px;
+  }
+.parallax1{
+
+
+  height: 38vh;
+}
+.parallax1:after{
+  mix-blend-mode: multiply;
+}
+.parallax-container {
+        height: 70vh;
+    }
+.parallax{
+  height:60vh;
+  max-width: 100%;
+}
+.parallax img{
+  height: 100vh;
+    width: 165vw;
+}
+.getincontact {
+    padding: 7% 5%;
+  }
+#h2Text{
+
+    font-size: 2.5em;
+  }
+}
+
+/*buyout page*/
+
+
+.container {
+  height: 900px;
+  width: 400px;
+  background-image: linear-gradient(#1e6b30, #308d46);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-bottom-left-radius: 180px;
+  border-top-right-radius: 150px;
+}
+
+.main-content {
+  height: 235px;
+  background-color: #1b9236;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 80px;
+  border-top: #1e6b30;
+}
+
+.text {
+  text-align: center;
+  font-size: 300%;
+  text-decoration: aliceblue;
+  color: aliceblue;
+}
+
+.course {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.centre-content {
+  height: 180px;
+  margin: -70px 30px 20px;
+  color: aliceblue;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 20px;
+  border-radius: 25px;
+  padding-top: 0.5px;
+  background-image: linear-gradient(#1e6b30, #308d46);
+}
+
+.centre-content-h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: normal;
+}
+
+.price {
+  font-size: 60px;
+  margin-left: 25px;
+  bottom: -30px;
+  position: relative;
+}
+
+.pay-now-btn {
+  cursor: pointer;
+  color: #fff;
+  height: 50px;
+  width: 290px;
+  border: none;
+  margin: 5px 30px;
+  background-color: rgb(71, 177, 61);
+  position: relative;
+}
+
+.card-details {
+  background: rgb(8, 49, 14);
+  color: rgb(225, 223, 233);
+  margin: 10px 30px;
+  padding: 10px;
+  /* border-bottom-left-radius: 80px; */
+}
+
+.card-details p {
+  font-size: 15px;
+}
+
+.card-details label {
+  font-size: 15px;
+  line-height: 35px;
+}
+
+.submit-now-btn {
+  cursor: pointer;
+  color: #fff;
+  height: 30px;
+  width: 240px;
+  border: none;
+  margin: 5px 30px;
+  background-color: rgb(71, 177, 61);
+}
